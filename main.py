@@ -12,7 +12,7 @@ Siva = Client(
 )
 @Siva.on_message(filters.command("start"))
 async def start_cmd(client, message):
-   await message.reply_text("Hello! Iam pyrogram bot")
+   await message.reply_text("Hello! Iam pyrogram bot\n owner is siva the boss")
 
 print("Bot strarted")
 
