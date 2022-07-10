@@ -1,1 +1,1 @@
-worker: pyrogram
+worker: python3 main.py
