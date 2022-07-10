@@ -13,6 +13,7 @@ Siva = Client(
 )
 
 @Siva.on_message(filters.command("start")),
+async def start_cmd(bot, message):
     await message.reply_text(
         text="*hello welcome to our bot.*"
         reply_markup=InlineKeyboardMarkup([[
