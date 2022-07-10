@@ -22,6 +22,7 @@ button = [
                   call_back_data="miku_")
               ],
 
+]
 if query.data == "miku_":
         query.message.edit_text(
             text=f"""Hello [{update.effective_user.first_name}](tg://user?id={update.effective_user.id}) I'm {context.bot.first_name}, a powerful group management bot built to help you manage your group easily.
