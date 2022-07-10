@@ -1,5 +1,4 @@
 from pyrogram import Client, filters
-from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup, Update
 
 API_ID="17795696"
 API_HASH="afcbcd249c7d8728d9b213b10d39a649"
@@ -13,13 +12,8 @@ Siva = Client(
 )
 
 @Siva.on_message(filters.command("start")),
-async def start_cmd(bot, message):
-    await message.reply_text(
-        text="*hello welcome to our bot.*"
-        reply_markup=InlineKeyboardMarkup([[
-        InlineKeyboardButton("demo button", url="https://github.com/Sivatheking/pyrogram")
-        ],
-    ]
+async def start_cmd(client, message):
+    await message.reply_text("hi")
                
           
 
