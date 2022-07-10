@@ -12,6 +12,20 @@ Siva = Client(
    bot_token=BOT_TOKEN
 )
 
+@Siva.on_message(filters.command("start")),
+    await message.reply_text(
+        text="*hello welcome to our bot.*"
+        reply_markup=InlineKeyboardMarkup([[
+        InlineKeyboardButton("demo button", url="https://github.com/Sivatheking/pyrogram")
+        ],
+    ]
+               
+          
+
+
+
+
+
 button = [
     [         
              InlineKeyboardButton(
