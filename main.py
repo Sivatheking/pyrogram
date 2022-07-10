@@ -51,22 +51,7 @@ if query.data == "miku_":
                 ]
             ),
         )
-    elif query.data == "miku_back":
-        first_name = update.effective_user.first_name
-        query.message.edit_text(
-                PM_START_TEXT.format(
-                    escape_markdown(context.bot.first_name),
-                    PM_PHOTO,
-                    escape_markdown(first_name),
-                    escape_markdown(uptime),
-                    sql.num_users(),
-                    sql.num_chats()),
-                reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.MARKDOWN,
-                timeout=5,
-                disable_web_page_preview=False,
-        )
-
+    
 
 
 
