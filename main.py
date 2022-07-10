@@ -14,6 +14,22 @@ Siva = Client(
 async def start_cmd(client,message):
   await message.reply_text("Hello! Iam pyrogram bot")
 
+
+@Siva.on_message(filters.message("hi"))
+async def hi_message(client,message):
+  await message.reply_text("Hello! Iam pyrogram bot")
+
+
+
+
+
+
+
+
+
+
+
+
 print("Bot started")
 
 Siva.run()
