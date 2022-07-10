@@ -15,8 +15,8 @@ async def start_cmd(client,message):
   await message.reply_text("Hello! Iam pyrogram bot")
 
 
-@Siva.on_message(filters.Message("hi"))
-async def hi_message(client,message):
+@Siva.on_message(filters.command("hi"))
+async def hi_cmd(client,message):
   await message.reply_text("Hello! Iam pyrogram bot")
 
 
