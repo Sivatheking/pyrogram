@@ -10,33 +10,10 @@ Siva = Client(
    api_hash=API_HASH,
    bot_token=BOT_TOKEN
 )
+@Siva.on_message(filters.command("start"))
+async def start_cmd(client,message):
+  await message.reply_txt("Hello! Iam pyrogram bot")
 
-@Siva.on_message(filters.command("start")),
-async def start_cmd(client, message):
-    await message.reply_text("hi")
-               
-          
-
-
-
-
-
-button = [
-    [         
-             InlineKeyboardButton(
-                  text=" hi",
-                  url="https://github.com/Sivatheking/pyrogram")
-              ],
-    ]
-
-
-
-   
-
-
-
-
-
-print("Bot strarted")
+print("Bot started")
 
 Siva.run()
