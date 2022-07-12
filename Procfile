@@ -1,1 +1,1 @@
-worker: python3 Pyrogram
+worker: python3 bot
