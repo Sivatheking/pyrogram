@@ -16,11 +16,6 @@ async def start_cmd(client, message):
        text=f"""Hello! Iam pyrogram bot {message.from_user.mention}""",
    )
 
-@Siva.on_message(filters.command("start"))
-async def start_cmd(client, message):
-    await message.reply_text(
-       text=f"""Hello! Iam pyrogram bot {message.from_user.mention}""",
-   )
 
 
 @Siva.on_message(filters.command("hi"))
