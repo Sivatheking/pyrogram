@@ -11,13 +11,13 @@ Siva = Client(
    bot_token=BOT_TOKEN
 )
 
-PM_MENTION = """
-    HELLO! {message.from_user.mention} Tq for use in me
-""" 
 
 @Siva.on_message(filters.command("start"))
 async def start_cmd(client, message):
-   await message.reply_text(
+   PM_MENTION = """
+    HELLO! {message.from_user.mention} Tq for use in me""" 
+
+    await message.reply_text(
        text="PM_MENTION")
 
 
