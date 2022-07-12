@@ -11,13 +11,15 @@ Siva = Client(
    bot_token=BOT_TOKEN
 )
 @Siva.on_message(filters.group & filters.command("start"))
-async def start_cmd(client,message):
-  await message.reply_text("Hello! Iam pyrogram bot")
+async def start_cmd(client, message):
+   await message.reply_text("
+       text=f"""Hello! Iam pyrogram bot {message.from_user.mention}""",
+   )
 
 
 @Siva.on_message(filters.command("hi"))
-async def hi_cmd(client,message):
-  await message.reply_text("Hello! Iam pyrogram bot")
+async def hi_cmd(client, message):
+    await message.reply_text("Hello! Iam pyrogram bot")
 
 
 
