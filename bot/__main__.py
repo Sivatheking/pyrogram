@@ -1,4 +1,4 @@
-from pyrogram import Client, filters
+Ljfrom pyrogram import Client, filters
 
 API_ID="17795696"
 API_HASH="afcbcd249c7d8728d9b213b10d39a649"
@@ -17,7 +17,7 @@ async def start_cmd(client, message):
     PM_MENTION = """
 HELLO! {} Tq for use in me""" 
 
-    await message.reply_text(text=PM_MENTION.format(message.from_user_mention)
+    await message.reply_text(text=PM_MENTION.format(message.from_user_mention))
 
 
 
