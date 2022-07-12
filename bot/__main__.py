@@ -17,8 +17,7 @@ async def start_cmd(client, message):
    PM_MENTION = """
     HELLO! {message.from_user.mention} Tq for use in me""" 
 
-    await message.reply_text(
-       text="PM_MENTION")
+    await message.reply_text(text=PM_MENTION)
 
 
 
