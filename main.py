@@ -1,4 +1,4 @@
-from pyrogram import Client, filters
+from pyrogram import Client, filters, Message
 
 API_ID="17795696"
 API_HASH="afcbcd249c7d8728d9b213b10d39a649"
@@ -10,7 +10,7 @@ Siva = Client(
    api_hash=API_HASH,
    bot_token=BOT_TOKEN
 )
-@Siva.on_message(filters.group & filters.command("start"))
+@Siva.on_message(filters.group & filters.private("start"))
 async def start_cmd(client, message):
    await message.reply_text(
        text=f"""Hello! Iam pyrogram bot {message.from_user.mention}""",
