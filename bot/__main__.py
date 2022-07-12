@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from bot.script import PM_MENTION
+from Siva.script import PM_MENTION
 
 API_ID="17795696"
 API_HASH="afcbcd249c7d8728d9b213b10d39a649"
