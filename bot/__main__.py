@@ -15,9 +15,9 @@ Siva = Client(
 @Siva.on_message(filters.command("start"))
 async def start_cmd(client, message):
     PM_MENTION = """
-HELLO! {message.from_user.mention} Tq for use in me""" 
+HELLO! {} Tq for use in me""" 
 
-    await message.reply_text(text=PM_MENTION)
+    await message.reply_text(text=PM_MENTION.format(message.from_user_mention)
 
 
 
