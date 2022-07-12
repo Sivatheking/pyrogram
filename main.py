@@ -10,7 +10,7 @@ Siva = Client(
    api_hash=API_HASH,
    bot_token=BOT_TOKEN
 )
-@Siva.on_message(filters.command("start"))
+@Siva.on_message(filters.group & filters.command("start"))
 async def start_cmd(client,message):
   await message.reply_text("Hello! Iam pyrogram bot")
 
