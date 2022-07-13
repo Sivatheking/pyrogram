@@ -1,4 +1,5 @@
-from pyrogram import Client, filters, Message
+from pyrogram import Client, filters
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 API_ID="17795696"
 API_HASH="afcbcd249c7d8728d9b213b10d39a649"
@@ -14,11 +15,10 @@ Siva = Client(
 
 @Siva.on_message(filters.command("start"))
 async def start_cmd(client, message):
-    PM_MENTION = """
-HELLO! {} Tq for use in me""" 
+    text = """
+HELLO! {message.from_user_mention} """ 
 
-    await message.reply_text(text=PM_MENTION.format(message.from_user_mention)
-    )
+    await message.reply_text(text=text)
 
 
 
