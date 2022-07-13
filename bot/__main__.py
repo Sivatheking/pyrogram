@@ -16,7 +16,7 @@ Siva = Client(
 @Siva.on_message(filters.command("start"))
 async def start_cmd(client, message):
     text = """
-HELLO! {message.from_user_mention} """ 
+HELLO! {message.from_user.mention} """ 
 
     await message.reply_text(text=text)
 
