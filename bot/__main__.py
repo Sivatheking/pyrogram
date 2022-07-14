@@ -13,7 +13,7 @@ Siva = Client(
 )
 
 Button = [[
- InlineKeyboardButton("join here", url="my.telegram.org")
+ InlineKeyboardButton("join here", url="https://youtube.com/channel/UCTENtjruBCz3gJlXUfvdvZQ")
 ]]
 
 
