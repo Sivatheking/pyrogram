@@ -35,7 +35,7 @@ async def start_cmd(client, message):
 async def help_cmd(client, message):
     await message.reply_photo(
         photo="https://telegra.ph/file/e3975e328fad64bd75b18.jpg",
-        captain="<b> only telegram</b>",
+        caption="<b> only telegram</b>",
         reply_markup=InlineKeyboardMarkup(Button)
     )
 
