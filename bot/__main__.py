@@ -32,14 +32,13 @@ async def start_cmd(client, message):
 
 
 
-@Siva.on_message(filters.command("help"))
-async def help_cmd(client, message):
+@Siva.on_message(filters.command("movies"))
+async def movies_cmd(client, message):
     await message.reply_photo(
         photo="https://telegra.ph/file/e3975e328fad64bd75b18.jpg",
         caption="<b> only telegram</b>",
         reply_markup=InlineKeyboardMarkup(Button),
-        coroutine = function(*args, **kwargs)"
-    )
+        )
 
 
 
