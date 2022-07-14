@@ -1,33 +1,51 @@
 {
-    "name": "pyrogram",
-    "description": "Telegram DC Id Tracker Bot",
-    "keywords": [
-        "Telegram"
-    ],
-    "repository": "https://github.com/Sivatheking/pyrogram"
-    "env": {
-        "API_ID": {
-            "description": "Your APP ID From my.telegram.org",
-            "value": ""
-        },
-        "API_HASH": {
-            "description": "Your API Hash From my.telegram.org",
-            "value": ""
-        },
-        "BOT_TOKEN": {
-            "description": "Your Bot Token From @BotFather",
-            "value": ""
-        }
+  "name": "PyroGramBot",
+  "description": "PyroGram Telegram User / Bot. Powered by @UserBotTalk",
+  "keywords": [
+    "telegram",
+    "best",
+    "indian",
+    "pyrogram",
+    "userbot",
+    "3",
+    "plugin",
+    "modular",
+    "productivity"
+  ],
+  "repository": "https://github.com/SpEcHiDe/PyroGramBot",
+  "success_url": "https://telegram.dog/UserBotTalk",
+  "website": "https://github.com/SpEcHiDe/PyroGramBot",
+  "env": {
+    "ENV": {
+      "description": "Setting this to ANYTHING will enable webhooks when in env mode",
+      "value": "ANYTHING"
     },
-    "buildpacks": [
-        {
-            "url": "heroku/python"
-        }
-    ],
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "free"
-        }
+    "APP_ID": {
+      "description": "Get this value from https://my.telegram.org"
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org"
+    },
+    "Bot token": {
+     "description": "bot token"
+    },
+      
+  },
+  "addons": [{
+    "plan": "heroku-postgresql",
+    "options": {
+      "version": "12"
     }
+  }],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }, {
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
 }
