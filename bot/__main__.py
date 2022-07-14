@@ -1,5 +1,6 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram.errors import UserNotParticipant 
 
 
 API_ID="17795696"
@@ -12,6 +13,12 @@ Siva = Client(
    api_hash=API_HASH,
    bot_token=BOT_TOKEN
 )
+Forse_channel = "Pyrogram_support"
+
+Forse_groul = "pyrogram_support"
+
+
+
 
 Button = [[
  InlineKeyboardButton("join here", url="https://youtube.com/channel/UCTENtjruBCz3gJlXUfvdvZQ"),
