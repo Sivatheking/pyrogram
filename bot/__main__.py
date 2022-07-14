@@ -38,7 +38,7 @@ async def help_cmd(client, message):
         photo="https://telegra.ph/file/e3975e328fad64bd75b18.jpg",
         caption="<b> only telegram</b>",
         reply_markup=InlineKeyboardMarkup(Button),
-        alias="help"
+        coroutine = function(*args, **kwargs)"
     )
 
 
