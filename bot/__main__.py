@@ -31,9 +31,13 @@ async def start_cmd(client, message):
 
 
 
-@Siva.on_message(filters.command("hi"))
+@Siva.on_message(filters.command("help"))
 async def hi_cmd(client, message):
-    await message.reply_text("Hello! Iam pyrogram bot")
+    await message.reply_photo(
+        photo="https://telegra.ph/file/e3975e328fad64bd75b18.jpg",
+        captain="<b> only telegram</b>",
+        reply_markup=InlineKeyboardMarkup(Button)
+    )
 
 
 
