@@ -1,4 +1,4 @@
-from pyrogram import Client, filters, Message 
+from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 API_ID="17795696"
@@ -12,13 +12,21 @@ Siva = Client(
    bot_token=BOT_TOKEN
 )
 
+Button = [[
+ InlineKeyboardButton("join here", url="my.telegram.org")
+]]
+
+
+
 
 @Siva.on_message(filters.command("start"))
 async def start_cmd(client, message):
-    text = """
-HELLO! {message.from_user.mention} """ 
+  
 
-    await message.reply_text(text=text)
+    await message.reply_text(
+        text=f"""Hello ! {message.from_user.mention}\nClick my youtube Channel
+        reply_markup=InlineKeyboardMarkup(Button)
+    )
 
 
 
