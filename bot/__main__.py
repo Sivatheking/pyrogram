@@ -15,7 +15,7 @@ Siva = Client(
 )
 Forse_channel = "Pyrogram_support"
 
-Forse_groul = "pyrogram_support"
+Forse_group = "pyrogram_support"
 
 
 
