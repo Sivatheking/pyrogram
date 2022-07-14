@@ -13,7 +13,8 @@ Siva = Client(
 )
 
 Button = [[
- InlineKeyboardButton("join here", url="https://youtube.com/channel/UCTENtjruBCz3gJlXUfvdvZQ")
+ InlineKeyboardButton("join here", url="https://youtube.com/channel/UCTENtjruBCz3gJlXUfvdvZQ"),
+ InlineKeyboardButton ("Add me", url="https://t.me/pyrogram66_bot?startgroup=true")
 ]]
 
 
