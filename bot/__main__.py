@@ -39,7 +39,7 @@ Button = [[
 async def start_cmd(bot, message):
     if Forse_channel:
         try:
-            user = await bot.get_chat_member(Forse_channel, message.from_use.id)     
+            user = await bot.get_chat_member(Forse_channel, message.from_user.id)     
             if user.status == "kicked out":
                 await message.reply_text("You are banned")
                 return
