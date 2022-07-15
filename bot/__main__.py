@@ -13,11 +13,18 @@ Siva = Client(
    api_hash=API_HASH,
    bot_token=BOT_TOKEN
 )
-Forse_channel = "Pyrogram_support"
+Forse_channel = "Pyrogram_updates"
 
 Forse_group = "pyrogram_support"
 
 
+Channel = [[
+ InlineKeyboardButton("join here", url=f"t.me/{Forse_channel}")
+]]
+
+Group = [[
+ InlineKeyboardButton("join here", url=f"t.me/{Forse_group}")
+]]
 
 
 Button = [[
@@ -37,7 +44,11 @@ async def start_cmd(client, message):
                 await message.reply_text("You are banned")
                 return
         except UserNotParticipant:
-  
+            await message.reply_text(
+                text="You are not sub... My channel",
+                reply_markup=InlineKeyboardMarkup(Channel)
+            )       
+            returen 
 
     await message.reply_text(
         text=f"""Hello ! {message.from_user.mention}\nClick my youtube Channel""",
