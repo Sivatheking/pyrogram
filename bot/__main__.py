@@ -108,15 +108,16 @@ async def movies_cmd(client, message):
         caption="<b> only telegram</b>",
         reply_markup=InlineKeyboardMarkup(Button),
         )
+
 @Siva.on_message(filters.command("info"))
 async def info_cmd(client, msg):
     info = f"""
 First Name - {msg.from_user.first_name}
 Last Name - {msg.from_user.last_name}
-User name - @{msg.from_user.user_name}
+User name - @{msg.from_user.username}
 Id - {msg.from_user.id}"""
 
-   await msg.reply_text(text=info)
+    await msg.reply_text(text=info)
 
 
 
