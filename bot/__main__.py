@@ -72,6 +72,34 @@ async def start_cmd(bot, message):
 
 @Siva.on_message(filters.command("movies"))
 async def movies_cmd(client, message):
+    if Forse_channel:
+        try:
+            user = await bot.get_chat_member(Forse_channel, message.from_user.id)     
+            if user.status == "kicked out":
+                await message.reply_text("You are banned")
+                return
+        except UserNotParticipant:
+            await message.reply_text(
+                text="You are not sub... My channel",
+                reply_markup=InlineKeyboardMarkup(Channel)
+            )       
+            return 
+
+    if Forse_group:
+        try:
+            user = await bot.get_chat_member(Forse_group, message.from_user.id)     
+            if user.status == "kicked out":
+                await message.reply_text("You are banned")
+                return
+        except UserNotParticipant:
+            await message.reply_text(
+                text="You are not sub... My group",
+                reply_markup=InlineKeyboardMarkup(Group)
+            )       
+            return 
+
+
+
     await message.reply_photo(
         photo="https://telegra.ph/file/e3975e328fad64bd75b18.jpg",
         caption="<b> only telegram</b>",
