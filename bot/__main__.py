@@ -36,7 +36,7 @@ Button = [[
 
 
 @Siva.on_message(filters.command("start"))
-async def start_cmd(bot, message):
+async def start_cmd(client, message):
     if Forse_channel:
         try:
             user = await bot.get_chat_member(Forse_channel, message.from_user.id)     
