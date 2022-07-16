@@ -49,6 +49,7 @@ async def start_cmd(bot, message):
                 reply_markup=InlineKeyboardMarkup(Channel)
             )       
             return 
+
     if Forse_group:
         try:
             user = await bot.get_chat_member(Forse_group, message.from_user.id)     
@@ -58,7 +59,7 @@ async def start_cmd(bot, message):
         except UserNotParticipant:
             await message.reply_text(
                 text="You are not sub... My group",
-                reply_markup=InlineKeyboardMarkup(Channel)
+                reply_markup=InlineKeyboardMarkup(Group)
             )       
             return 
 
