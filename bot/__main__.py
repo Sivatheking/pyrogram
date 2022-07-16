@@ -13,6 +13,16 @@ Siva = Client(
    api_hash=API_HASH,
    bot_token=BOT_TOKEN
 )
+
+Info = """
+First Name - {msg.from_user.first_name}
+Last Name - {msg.from_user.last_name}
+User name - @{msg.from_user.user_name}
+Id - {msg.from_user.id}
+"""
+
+
+
 Forse_channel = "Pyrogram_updates"
 
 Forse_group = "pyrogram_support"
