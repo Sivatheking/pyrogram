@@ -14,7 +14,7 @@ Siva = Client(
    bot_token=BOT_TOKEN
 )
 
-Info = """
+Info = f"""
 First Name - {msg.from_user.first_name}
 Last Name - {msg.from_user.last_name}
 User name - @{msg.from_user.user_name}
