@@ -74,7 +74,7 @@ async def start_cmd(bot, message):
 async def movies_cmd(client, message):
     if Forse_channel:
         try:
-            user = await bot.get_chat_member(Forse_channel, message.from_user.id)     
+            user = await client.get_chat_member(Forse_channel, message.from_user.id)     
             if user.status == "kicked out":
                 await message.reply_text("You are banned")
                 return
