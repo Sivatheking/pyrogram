@@ -14,12 +14,6 @@ Siva = Client(
    bot_token=BOT_TOKEN
 )
 
-Info = f"""
-First Name - {msg.from_user.first_name}
-Last Name - {msg.from_user.last_name}
-User name - @{msg.from_user.user_name}
-Id - {msg.from_user.id}"""
-
 
 
 Forse_channel = "Pyrogram_updates"
@@ -116,6 +110,13 @@ async def movies_cmd(client, message):
         )
 @Siva.on_message(filters.command("info"))
 async def info_cmd(client, msg):
+
+Info = f"""
+First Name - {msg.from_user.first_name}
+Last Name - {msg.from_user.last_name}
+User name - @{msg.from_user.user_name}
+Id - {msg.from_user.id}"""
+
    await msg.reply_text(text=Info)
 
 
