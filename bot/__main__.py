@@ -48,7 +48,7 @@ async def start_cmd(bot, message):
                 text="You are not sub... My channel",
                 reply_markup=InlineKeyboardMarkup(Channel)
             )       
-            returen 
+            return 
 
     await message.reply_text(
         text=f"""Hello ! {message.from_user.mention}\nClick my youtube Channel""",
