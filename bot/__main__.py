@@ -115,7 +115,8 @@ async def info_cmd(client, msg):
 First Name - {msg.from_user.first_name}
 Last Name - {msg.from_user.last_name}
 User name - @{msg.from_user.username}
-Id - {msg.from_user.id}"""
+Id - {msg.from_user.id}
+Mention - {msg.from_user.mention}"""
 
     await msg.reply_text(text=info)
 
