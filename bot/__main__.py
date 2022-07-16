@@ -115,7 +115,9 @@ async def movies_cmd(client, message):
         caption="<b> only telegram</b>",
         reply_markup=InlineKeyboardMarkup(Button),
         )
-
+@Siva.on_message(filters.command("info"))
+async def info_cmd(client, msg):
+   await msg.reply_text(text=Info)
 
 
 
