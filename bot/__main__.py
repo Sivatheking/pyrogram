@@ -124,8 +124,7 @@ Mention - {msg.from_user.mention}"""
 @Siva.on_message(filters.command("id"))
 async def id_cmd(client, msg):
     Id = f"""
-Your id - `{msg.from_user.id}`
-Group id - `{msg.chat.id}`"""
+Your id - `{msg.from_user.id}` & {msg.chat.id}"""
     
     await msg.reply_text(text=Id)
 
