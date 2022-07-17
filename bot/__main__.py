@@ -121,16 +121,13 @@ Mention - {msg.from_user.mention}"""
 
     await msg.reply_text(text=info)
 
-#group
-
-@Siva.on_message(filters.group("info"))
-async def info_cmd(client, msg):
-    info_group = f"""
-Title - {msg.chat.title}
-Username - {msg.chat.username}
-Group id - {msg.chat.id}"""
-
-    await msg.reply_text(text=info_group)
+@Siva.on_message(filters.command("id"))
+async def id_cmd(client, msg):
+    Id = f"""
+Your id - `{msg.from_user.id}`
+Group id - `{msg.chat.id}`"""
+    
+    await msg.reply_text(text=Id)
 
 
 
