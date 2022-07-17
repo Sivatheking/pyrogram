@@ -129,11 +129,11 @@ Your id - `{msg.from_user.id}`"""
     await msg.reply_text(text=Id)
 
 @Siva.on_message(filters.group("id"))
-async def id(client, msg):
-    Id = f"""
+async def id_cmd(client, msg):
+    Ie = f"""
 Group id `{msg.chat.id}`"""
     
-    await msg.reply_text(text=Id)
+    await msg.reply_text(text=Ie)
 
 
 
