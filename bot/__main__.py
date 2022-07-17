@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
-from pyrogram.types import CallbackQuery
+from pyrogram.types import CallbackQuery, ReplyKeyboard
 from pyrogram.errors import UserNotParticipant 
 
 
@@ -124,16 +124,10 @@ Mention - {msg.from_user.mention}"""
 @Siva.on_message(filters.command("id"))
 async def id_cmd(client, msg):
     Id = f"""
-Your id - `{msg.from_user.id}`"""
+Your id - `{msg.chat.id}`"""
     
     await msg.reply_text(text=Id)
 
-@Siva.on_message(filters.group("id"))
-async def id_cmd(client, msg):
-    Ie = f"""
-Group id `{msg.chat.id}`"""
-    
-    await msg.reply_text(text=Ie)
 
 
 
