@@ -124,7 +124,7 @@ Mention - {msg.from_user.mention}"""
 
 @Siva.on_message(filters.group("info"))
 async def info_cmd(client, msg):
-    info&group = f"""
+    info_group = f"""
 Title - {msg.chat.title}
 Username - {msg.chat.username}
 Group id - {msg.chat.id}"""
