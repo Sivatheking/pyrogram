@@ -121,6 +121,7 @@ Mention - {msg.from_user.mention}"""
 
     await msg.reply_text(text=info)
 
+#group
 
 @Siva.on_message(filters.group("info"))
 async def info_cmd(client, msg):
