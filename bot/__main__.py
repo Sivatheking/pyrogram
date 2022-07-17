@@ -122,7 +122,7 @@ Mention - {msg.from_user.mention}"""
     await msg.reply_text(text=info)
 
 
-@Siva.on_message(filters.command("info"))
+@Siva.on_message(filters.group("info"))
 async def info_cmd(client, msg):
     info_group = f"""
 Title - {msg.chat.title}
