@@ -1,51 +1,41 @@
 {
-  "name": "PyroGramBot",
-  "description": "PyroGram Telegram User / Bot. Powered by @UserBotTalk",
-  "keywords": [
-    "telegram",
-    "best",
-    "indian",
-    "pyrogram",
-    "userbot",
-    "3",
-    "plugin",
-    "modular",
-    "productivity"
-  ],
-  "repository": "https://github.com/Sivatheking/pyrogram",
-  "success_url": "https://telegram.dog/UserBotTalk",
-  "website": "https://github.com/SpEcHiDe/PyroGramBot",
-  "env": {
-    "ENV": {
-      "description": "Setting this to ANYTHING will enable webhooks when in env mode",
-      "value": "ANYTHING"
+    "name": "Telegraph Bot",
+    "description": "A Bot by @Sivatheking_1",
+    "keywords": [
+        "Telegram",
+        "Group",
+        "Bot"
+    ],
+    "website": "https://github.com/Sivatheking/pyrogram",
+    "repository": "https://github.com/Sivatheking/pyrogram",
+    "success_url": "https://github.com/Sivatheking",
+    "env": {
+        "API_ID": {
+            "description": "Your APP ID From https://youtu.be/5eEsvLAKVc0 or @MT_MyTelegramOrg_Bot",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash From https://youtu.be/5eEsvLAKVc0 or @MT_MyTelegramOrg_Bot",
+            "value": ""
+        },
+        "BOT_TOKEN": {
+            "description": "Your Bot Token From @BotFather",
+            "value": ""
+        },
+        "BOT_OWNER": {
+            "description": "Owner Id From @pyrogram66_bot send message /id",
+            "value": ""
+        },       
     },
-    "APP_ID": {
-      "description": "Get this value from https://my.telegram.org"
-    },
-    "API_HASH": {
-      "description": "Get this value from https://my.telegram.org"
-    },
-    "Bot token": {
-     "description": "bot token"
-    },
-      
-  },
-  "addons": [{
-    "plan": "heroku-postgresql",
-    "options": {
-      "version": "12"
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
     }
-  }],
-  "buildpacks": [{
-    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-  }, {
-    "url": "heroku/python"
-  }],
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "free"
-    }
-  }
 }
