@@ -70,7 +70,9 @@ async def start_cmd(client, message):
         reply_markup=ReplyKeyboardMarkup(
             [[
                 "RRR movie"
-            ]],
+            [
+                "Join here
+            ]]
             resize_keyboard=True,
             one_time_keyboard=True
         )
