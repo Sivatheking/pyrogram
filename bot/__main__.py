@@ -5,13 +5,13 @@ from pyrogram.errors import UserNotParticipant
 import os
 
 
-BOT_OWNER = int(os.environ["BOT_OWNER"])
 
 Siva = Client(
    name="PyrogramBot",
    bot_token = os.environ["BOT_TOKEN"],
     api_id = int(os.environ["API_ID"]),
-    api_hash = os.environ["API_HASH"]
+    api_hash = os.environ["API_HASH"],
+    bot_owner = int(os.environ["BOT_OWNER"])
 )
 
 
