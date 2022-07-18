@@ -71,7 +71,7 @@ async def start_cmd(client, message):
             [[
                 "RRR movie"
             [
-                "Join here
+                "Join here"
             ]]
             resize_keyboard=True,
             one_time_keyboard=True
