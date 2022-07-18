@@ -3,6 +3,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pyrogram.types import CallbackQuery, ReplyKeyboardMarkup
 from pyrogram.errors import UserNotParticipant 
 import os
+form bot import script 
 
 
 Siva = Client(
