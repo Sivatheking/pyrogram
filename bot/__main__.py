@@ -69,7 +69,6 @@ async def start_cmd(client, message):
 
     await message.reply_text(
         text=f"""Hello ! {message.from_user.mention}\nClick my youtube Channel""",
-        reply_markup=InlineKeyboardMarkup(Button),
         reply_markup=ReplyKeyboardMarkup(
             [[
                 "RRR movie"
