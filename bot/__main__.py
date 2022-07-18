@@ -75,10 +75,7 @@ async def start_cmd(client, message):
 
     await message.reply_photo(
         photo="https://telegra.ph/file/e3975e328fad64bd75b18.jpg",
-        caption="Move : RRR\n
-                 Language : multi audios\n
-                 Type : inline \n
-                 Upload by : @Sivatheboss",
+        caption="Move : RRR\nLanguage : multi audios\nType : inline \nUpload by : @Sivatheboss",
         reply_markup=InlineKeyboardMarkup(Button),
     )
 
