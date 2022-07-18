@@ -25,7 +25,7 @@
         "BOT_OWNER": {
             "description": "Owner Id From @pyrogram66_bot send message /id",
             "value": ""
-        },       
+        }       
     },
     "buildpacks": [
         {
