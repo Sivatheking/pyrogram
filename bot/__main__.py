@@ -71,8 +71,11 @@ async def start_cmd(client, message):
             [[
                 "RRR movie"
             ]]
+            resize_keyboard=True,
+            one_time_keyboard=True
         )
     )
+
 @Siva.on_message(filters.regex("RRR movie"))
 async start_keyboard(client, message):
     await message.reply_photo(
