@@ -3,7 +3,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pyrogram.types import CallbackQuery, ReplyKeyboardMarkup
 from pyrogram.errors import UserNotParticipant 
 import os
-
+import script
 
 
 Siva = Client(
@@ -11,7 +11,6 @@ Siva = Client(
    bot_token = os.environ["BOT_TOKEN"],
     api_id = int(os.environ["API_ID"]),
     api_hash = os.environ["API_HASH"],
-    bot_owner = int(os.environ["BOT_OWNER"])
 )
 
 
