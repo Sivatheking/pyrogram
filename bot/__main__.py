@@ -2,17 +2,16 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pyrogram.types import CallbackQuery, ReplyKeyboardMarkup
 from pyrogram.errors import UserNotParticipant 
+import os
 
 
-API_ID="17795696"
-API_HASH="afcbcd249c7d8728d9b213b10d39a649"
-BOT_TOKEN="5324288989:AAEZNpMAf6DOHveFMOjm-Mxmeu_9TgVBsSg"
+BOT_OWNER = int(os.environ["BOT_OWNER"])
 
 Siva = Client(
    name="PyrogramBot",
-   api_id=API_ID,
-   api_hash=API_HASH,
-   bot_token=BOT_TOKEN
+   bot_token = os.environ["BOT_TOKEN"],
+    api_id = int(os.environ["API_ID"]),
+    api_hash = os.environ["API_HASH"]
 )
 
 
