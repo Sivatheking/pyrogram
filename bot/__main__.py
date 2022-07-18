@@ -73,7 +73,8 @@ async def start_cmd(client, message):
             ]]
         )
     )
-
+@Siva.on_message(filters.regex("RRR movie"))
+async start_keyboard(client, message):
     await message.reply_photo(
         photo="https://telegra.ph/file/e3975e328fad64bd75b18.jpg",
         caption="Move : RRR\nLanguage : multi audios\nType : inline \nUpload by : @Sivatheboss",
