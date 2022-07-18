@@ -107,7 +107,10 @@ async def movies_cmd(client, message):
 
     await message.reply_photo(
         photo="https://telegra.ph/file/e3975e328fad64bd75b18.jpg",
-        caption="<b> only telegram</b>",
+        caption="Move : RRR\n
+                 Language : multi audios\n
+                 Type : inline \n
+                 Upload by : @Sivatheboss",
         reply_markup=InlineKeyboardMarkup(Button),
         )
 
