@@ -72,7 +72,7 @@ async def start_cmd(client, message):
 async buttons_keyboard(client, message):
     await message.reply_text(
         text="Opening Keyboard"
-    reply_markup=ReplyKeyboardMarkup(
+        reply_markup=ReplyKeyboardMarkup(
             [[
                 "RRR movie"
             [
