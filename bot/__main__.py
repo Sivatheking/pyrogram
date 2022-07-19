@@ -70,7 +70,7 @@ async def start_cmd(client, message):
     )
         
 @Siva.on_message(filters.command("buttons"))
-async buttons_keyboard(client, message):
+async def buttons_keyboard(client, message):
     await message.reply_text(
         text="Opening...... Keyboard"
         reply_markup=ReplyKeyboardMarkup(
