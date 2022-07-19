@@ -72,7 +72,7 @@ async def start_cmd(client, message):
 @Siva.on_message(filters.command("buttons"))
 async def buttons_keyboard(client, message):
     await message.reply_text(
-        text="Opening...... Keyboard"
+        text="Opening...... Keyboard",
         reply_markup=ReplyKeyboardMarkup(
             [[
                 "RRR movie"
