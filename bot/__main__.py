@@ -69,15 +69,13 @@ async def start_cmd(client, message):
         text=f"""Hello ! {message.from_user.mention}\nClick my youtube Channel""",
         
 @Siva.on_message(filters.command("buttons"))
-async buttons_keyboard(client, message):
-    await message.reply_text(
-        text="Opening Keyboard"
+async buttons_keyboard(client, msg):
+    await msg.reply_text(
+        text="Opening...... Keyboard"
         reply_markup=ReplyKeyboardMarkup(
             [[
                 "RRR movie"
             ]]
-            resize_keyboard=True,
-            one_time_keyboard=True
         )
     )
 
