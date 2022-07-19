@@ -75,8 +75,6 @@ async buttons_keyboard(client, message):
         reply_markup=ReplyKeyboardMarkup(
             [[
                 "RRR movie"
-            [
-                "Join here"
             ]]
             resize_keyboard=True,
             one_time_keyboard=True
