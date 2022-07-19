@@ -70,7 +70,7 @@ async def start_cmd(client, message):
     )
         
 @Siva.on_message(filters.command("buttons"))
-async buttons_keyboard(client, msg):
+async buttons_keyboard(client, messg):
     await msg.reply_text(
         text="Opening...... Keyboard"
         reply_markup=ReplyKeyboardMarkup(
@@ -84,7 +84,7 @@ async buttons_keyboard(client, msg):
 async start_keyboard(client, message):
     await message.reply_photo(
         photo="https://telegra.ph/file/e3975e328fad64bd75b18.jpg",
-        caption="Move : RRR\nLanguage : multi audios\nType : inline \nUpload by : @Sivatheboss",
+        caption="Move : RRR\nLanguage : multi audios\nType : inline \nUpload by : @Sivatheking_1",
         reply_markup=InlineKeyboardMarkup(Button),
     )
 
