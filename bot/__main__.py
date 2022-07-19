@@ -77,6 +77,8 @@ async def buttons_keyboard(client, message):
             [[
                 "RRR movie"
             ]]
+            resize_keyboard=True,
+            one_time_keyboard=True
         )
     )
 
