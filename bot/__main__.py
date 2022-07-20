@@ -36,7 +36,7 @@ Button = [[
 
 
 RRR = Button = [[
- InlineKeyboardButton("<code> RRR movie</code>", url="https://new.gdtot.pm/file/3529341865")
+ InlineKeyboardButton(" RRR movie", url="https://new.gdtot.pm/file/3529341865")
 ]]
 
 
