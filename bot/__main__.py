@@ -35,6 +35,11 @@ Button = [[
 ]]
 
 
+RRR = Button = [[
+ InlineKeyboardButton("<code> RRR movie</code>", url="https://new.gdtot.pm/file/3529341865")
+]]
+
+
 
 
 @Siva.on_message(filters.command("start"))
@@ -85,9 +90,9 @@ async def buttons_keyboard(client, message):
 @Siva.on_message(filters.regex("RRR movie"))
 async def start_keyboard(client, message):
     await message.reply_photo(
-        photo="https://telegra.ph/file/e3975e328fad64bd75b18.jpg",
+        photo="https://telegra.ph/file/f4f3e83867591af7fa692.jpg",
         caption="Move : RRR\nLanguage : multi audios\nType : inline \nUpload by : @Sivatheking_1",
-        reply_markup=InlineKeyboardMarkup(Button),
+        reply_markup=InlineKeyboardMarkup(RRR),
     )
 
 
