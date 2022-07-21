@@ -76,6 +76,32 @@ async def start_cmd(client, message):
         
 @Siva.on_message(filters.command("buttons"))
 async def buttons_keyboard(client, message):
+    if Forse_channel:
+        try:
+            user = await client.get_chat_member(Forse_channel, message.from_user.id)     
+            if user.status == "kicked out":
+                await message.reply_text("You are banned")
+                return
+        except UserNotParticipant:
+            await message.reply_text(
+                text="You are not sub... My channel",
+                reply_markup=InlineKeyboardMarkup(Channel)
+            )       
+            return 
+
+    if Forse_group:
+        try:
+            user = await client.get_chat_member(Forse_group, message.from_user.id)     
+            if user.status == "kicked out":
+                await message.reply_text("You are banned")
+                return
+        except UserNotParticipant:
+            await message.reply_text(
+                text="You are not sub... My group",
+                reply_markup=InlineKeyboardMarkup(Group)
+            )       
+            return 
+
     await message.reply_text(
         text="Opening...... Keyboard",
         reply_markup=ReplyKeyboardMarkup(
@@ -89,6 +115,32 @@ async def buttons_keyboard(client, message):
 
 @Siva.on_message(filters.regex("RRR movie"))
 async def start_keyboard(client, message):
+    if Forse_channel:
+        try:
+            user = await client.get_chat_member(Forse_channel, message.from_user.id)     
+            if user.status == "kicked out":
+                await message.reply_text("You are banned")
+                return
+        except UserNotParticipant:
+            await message.reply_text(
+                text="You are not sub... My channel",
+                reply_markup=InlineKeyboardMarkup(Channel)
+            )       
+            return 
+
+    if Forse_group:
+        try:
+            user = await client.get_chat_member(Forse_group, message.from_user.id)     
+            if user.status == "kicked out":
+                await message.reply_text("You are banned")
+                return
+        except UserNotParticipant:
+            await message.reply_text(
+                text="You are not sub... My group",
+                reply_markup=InlineKeyboardMarkup(Group)
+            )       
+            return 
+
     await message.reply_photo(
         photo="https://telegra.ph/file/f4f3e83867591af7fa692.jpg",
         caption="Move : RRR\nLanguage : multi audios\nType : inline \nUpload by : @Sivatheking_1",
