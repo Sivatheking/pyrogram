@@ -183,11 +183,11 @@ async def movies_cmd(client, message):
 @Siva.on_message(filters.command("info"))
 async def info_cmd(client, msg):
     info = f"""
-First Name - {msg.get_chat.first_name}
-Last Name - {msg.get_chat.last_name}
-User name - @{msg.get_chat.username}
-Id - {msg.get_chat.id}
-Mention - {msg.get_chat.mention}"""
+First Name - {msg.from_chat.first_name}
+Last Name - {msg.from_chat.last_name}
+User name - @{msg.from_chat.username}
+Id - {msg.from_chat.id}
+Mention - {msg.from_chat.mention}"""
 
     await msg.reply_text(text=info)
 
