@@ -37,6 +37,8 @@ Button = [[
 
 RRR = Button = [[
  InlineKeyboardButton(" RRR movie", url="https://new.gdtot.pm/file/3529341865")
+],[
+ InlineKeyboardButton("video", callback_data="video")
 ]]
 
 
@@ -197,6 +199,16 @@ async def id_cmd(client, msg):
 Your id : `{msg.chat.id}`"""
     
     await msg.reply_text(text=Id)
+
+
+@Siva.on_callback_query()
+async def callback(client, msg: CallbackQuery)
+    if msg.data == "video":
+        await msg.message.edit(
+            video="https://new.gdtot.pm/file/3529341865",
+            caption="siva the boss"
+        )
+        
 
 
 
