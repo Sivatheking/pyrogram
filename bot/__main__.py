@@ -76,6 +76,7 @@ async def start_cmd(client, message):
 
     await message.reply_text(
         text=f"""Hello ! {message.from_user.mention}\nClick my youtube Channel""",
+        reply_markup=InlineKeyboardMarkup(START_TEXT)
     )
         
 @Siva.on_message(filters.command("buttons"))
