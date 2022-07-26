@@ -206,7 +206,7 @@ Your id : `{msg.from_user.id}`"""
 @Siva.on_message(filters.command("video"))
 async def video(client, msg):
     await msg.reply_video(
-        video=" https://mdisk.me/convertor/16x9/98Jbhk",
+        video="https://mdisk.me/convertor/16x9/98Jbhk",
         caption="test"
     )
 
