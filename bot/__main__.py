@@ -202,7 +202,7 @@ Your id : `{msg.chat.id}`"""
 
 
 @Siva.on_callback_query()
-async def callback(client, msg: CallbackQuery)
+async def callback(client, msg: CallbackQuery):
     if msg.data == "video":
         await msg.message.edit(
             video="https://new.gdtot.pm/file/3529341865",
