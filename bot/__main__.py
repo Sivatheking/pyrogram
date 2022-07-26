@@ -37,8 +37,10 @@ Button = [[
 
 RRR = Button = [[
  InlineKeyboardButton(" RRR movie", url="https://new.gdtot.pm/file/3529341865")
-],[
- InlineKeyboardButton("video", callback_data="video")
+]]
+
+START_TEXT = [[
+ InlineKeyboardButton("🤖 Help", callback_data="🤖 Help 🤖")
 ]]
 
 
@@ -185,8 +187,8 @@ async def movies_cmd(client, message):
 @Siva.on_message(filters.command("info"))
 async def info_cmd(client, msg):
     info = f"""
-First Name - {msg.chat.first_name}
-Last Name - {msg.chat.last_name}
+First Name - {msg.from_user.first_name}
+Last Name - {msg.from_user.last_name}
 User name - @{msg.chat.username}
 Id - {msg.chat.id}
 Mention - {msg.chat.mention}"""
@@ -196,17 +198,16 @@ Mention - {msg.chat.mention}"""
 @Siva.on_message(filters.command("id"))
 async def id_cmd(client, msg):
     Id = f"""
-Your id : `{msg.chat.id}`"""
+Your id : `{msg.from_user.id}` or chat id : {msg chat.id}"""
     
     await msg.reply_text(text=Id)
 
 
 @Siva.on_callback_query()
 async def callback(client, msg: CallbackQuery):
-    if msg.data == "video":
-        await msg.message.edit_media(
-            video="https://new.gdtot.pm/file/3529341865",
-            caption="siva the boss"
+    if msg.data == "🤖 Help 🤖":
+        await msg.message.edit(
+            text="/id :- is used to your id\n /info :- get your information"
         )
         
 
