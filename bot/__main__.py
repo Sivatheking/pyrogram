@@ -204,7 +204,7 @@ Your id : `{msg.chat.id}`"""
 @Siva.on_callback_query()
 async def callback(client, msg: CallbackQuery):
     if msg.data == "video":
-        await msg.edit_video(
+        await msg.message.edit.reply_video(
             video="https://new.gdtot.pm/file/3529341865",
             caption="siva the boss"
         )
