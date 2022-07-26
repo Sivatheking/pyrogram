@@ -192,7 +192,7 @@ First Name - {msg.from_user.first_name}
 Last Name - {msg.from_user.last_name}
 User name - @{msg.chat.username}
 Id - {msg.chat.id}
-Mention - {msg.chat.mention}"""
+Mention - {msg.from_user.mention}"""
 
     await msg.reply_text(text=info)
 
