@@ -191,7 +191,14 @@ async def callback(client, msg: CallbackQuery):
         await msg.message.edit(
             text="☞︎︎︎ /id :- ɢᴇᴛ ʏᴏᴜʀ ɪᴅ\n☞︎︎︎ /info :- ɢᴇᴛ ʏᴏᴜʀ ɪɴғᴏʀᴍᴀʀɪᴏɴ\n➪ /buttons :- 𝙾𝚙𝚎𝚗𝚒𝚗𝚐 𝙺𝚎𝚢𝚋𝚘𝚊𝚛𝚍"
         )
-        
+    elig msg.data == "repo"
+        await msg.message.edit(
+            text="our 𝚛𝚎𝚙𝚘 𝚞𝚗𝚍𝚎𝚛 𝚋𝚞𝚝𝚝𝚘𝚗",
+            reply_markup=InlineKeyboardMarkup(repo)
+        )
+repo = [[
+ InlineKeyboardButton("💻 repo", url="https://github.com/Sivatheking/pyrogram")
+]]      
 
 
 
