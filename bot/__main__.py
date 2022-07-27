@@ -148,38 +148,11 @@ async def start_keyboard(client, message):
 
     await message.reply_photo(
         photo="https://telegra.ph/file/f4f3e83867591af7fa692.jpg",
-        caption="Move : RRR\nLanguage : multi audios\nType : inline \nUpload by : @Sivatheking_1",
+        caption="☞︎︎︎ Move : RRR\n☞︎︎︎ Language : multi audios\n☞︎︎︎ Type : inline \n☞︎︎︎ Upload by : @Sivatheking_1",
         reply_markup=InlineKeyboardMarkup(RRR),
     )
 
-
-@Siva.on_message(filters.command("movies"))
-async def movies_cmd(client, message):
-    if Forse_channel:
-        try:
-            user = await client.get_chat_member(Forse_channel, message.from_user.id)     
-            if user.status == "kicked out":
-                await message.reply_text("You are banned")
-                return
-        except UserNotParticipant:
-            await message.reply_text(
-                text="You are not sub... My channel",
-                reply_markup=InlineKeyboardMarkup(Channel)
-            )       
-            return 
-
-    if Forse_group:
-        try:
-            user = await client.get_chat_member(Forse_group, message.from_user.id)     
-            if user.status == "kicked out":
-                await message.reply_text("You are banned")
-                return
-        except UserNotParticipant:
-            await message.reply_text(
-                text="You are not sub... My group",
-                reply_markup=InlineKeyboardMarkup(Group)
-            )       
-            return 
+       
 
 
 
@@ -199,7 +172,7 @@ async def info_cmd(client, msg):
 @Siva.on_message(filters.command("id"))
 async def id_cmd(client, msg):
     Id = f"""
-Your id : `{msg.from_user.id}`"""
+☞︎︎︎ Your id : `{msg.from_user.id}`"""
 
     
     await msg.reply_text(text=Id)
@@ -216,7 +189,7 @@ async def video(client, msg):
 async def callback(client, msg: CallbackQuery):
     if msg.data == "🤖 Help 🤖":
         await msg.message.edit(
-            text="☞︎︎︎ /id :- ɢᴇᴛ ʏᴏᴜʀ ɪᴅ\n /info :- ɢᴇᴛ ʏᴏᴜʀ ɪɴғᴏʀᴍᴀʀɪᴏɴ"
+            text="☞︎︎︎ /id :- ɢᴇᴛ ʏᴏᴜʀ ɪᴅ\n☞︎︎︎ /info :- ɢᴇᴛ ʏᴏᴜʀ ɪɴғᴏʀᴍᴀʀɪᴏɴ\n➪ /buttons :- 𝙾𝚙𝚎𝚗𝚒𝚗𝚐 𝙺𝚎𝚢𝚋𝚘𝚊𝚛𝚍"
         )
         
 
