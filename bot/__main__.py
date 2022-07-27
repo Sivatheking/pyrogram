@@ -75,7 +75,7 @@ async def start_cmd(client, message):
             return 
 
     await message.reply_text(
-        text=f"""Hello ! {message.from_user.mention}\nClick my youtube Channel""",
+        text=f"""𝙷𝚎𝚕𝚕𝚘 ! {message.from_user.mention}\n""",
         reply_markup=InlineKeyboardMarkup(START_TEXT)
     )
         
@@ -188,11 +188,11 @@ async def movies_cmd(client, message):
 @Siva.on_message(filters.command("info"))
 async def info_cmd(client, msg):
     info = f"""
-First Name - {msg.from_user.first_name}
-Last Name - {msg.from_user.last_name}
-User name - @{msg.chat.username}
-Id - {msg.chat.id}
-Mention - {msg.from_user.mention}"""
+➪ First Name - {msg.from_user.first_name}
+➪ Last Name - {msg.from_user.last_name}
+➪ User name - @{msg.chat.username}
+➪ Id - {msg.chat.id}
+➪ Mention - {msg.from_user.mention}"""
 
     await msg.reply_text(text=info)
 
@@ -200,6 +200,7 @@ Mention - {msg.from_user.mention}"""
 async def id_cmd(client, msg):
     Id = f"""
 Your id : `{msg.from_user.id}`"""
+
     
     await msg.reply_text(text=Id)
 
@@ -215,7 +216,7 @@ async def video(client, msg):
 async def callback(client, msg: CallbackQuery):
     if msg.data == "🤖 Help 🤖":
         await msg.message.edit(
-            text="/id :- is used to your id\n /info :- get your information"
+            text="☞︎︎︎ /id :- ɢᴇᴛ ʏᴏᴜʀ ɪᴅ\n /info :- ɢᴇᴛ ʏᴏᴜʀ ɪɴғᴏʀᴍᴀʀɪᴏɴ"
         )
         
 
