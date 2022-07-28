@@ -195,10 +195,7 @@ async def callback(client, msg: CallbackQuery):
     elif msg.data == "repo":
         await msg.message.edit(
             text="our 𝚛𝚎𝚙𝚘 𝚞𝚗𝚍𝚎𝚛 𝚋𝚞𝚝𝚝𝚘𝚗",
-            reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("💻 repo", url="https://github.com/Sivatheking/pyrogram")
-               ]]
-            )
+            reply_markup=InlineKeyboardMarkup(Source_code)
         )
 
 @Siva.on_message(filters.command("repo"))
@@ -209,7 +206,7 @@ async def repo_cmd(client, msg):
     )
 
 
-repo = [[
+Source_code = [[
  InlineKeyboardButton("💻 repo", url="https://github.com/Sivatheking/pyrogram")
 ]]
 
