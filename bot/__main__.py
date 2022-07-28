@@ -189,15 +189,27 @@ async def video(client, msg):
 async def callback(client, msg: CallbackQuery):
     if msg.data == "🤖 Help 🤖":
         await msg.message.edit(
-            text="☞︎︎︎ /id :- ɢᴇᴛ ʏᴏᴜʀ ɪᴅ\n☞︎︎︎ /info :- ɢᴇᴛ ʏᴏᴜʀ ɪɴғᴏʀᴍᴀʀɪᴏɴ\n➪ /buttons :- 𝙾𝚙𝚎𝚗𝚒𝚗𝚐 𝙺𝚎𝚢𝚋𝚘𝚊𝚛𝚍"
+            text="☞︎︎︎ /id :- ɢᴇᴛ ʏᴏᴜʀ ɪᴅ\n☞︎︎︎ /info :- ɢᴇᴛ ʏᴏᴜʀ ɪɴғᴏʀᴍᴀʀɪᴏɴ\n☞︎︎︎ /buttons :- 𝙾𝚙𝚎𝚗𝚒𝚗𝚐 𝙺𝚎𝚢𝚋𝚘𝚊𝚛𝚍\n☞︎︎︎ /repo :- ᴍʏ sᴏᴜʀᴇ ᴄᴏᴅᴇ\nDᴇᴘʟᴏʏ ʏᴏᴜʀ ᴏᴡɴ ᴍʏ ᴄʟᴏɴᴇ"
         )
     elig msg.data == "repo"
         await msg.message.edit(
             text="our 𝚛𝚎𝚙𝚘 𝚞𝚗𝚍𝚎𝚛 𝚋𝚞𝚝𝚝𝚘𝚗",
             reply_markup=InlineKeyboardMarkup(repo)
         )
+@Siva.on_message(filters.command("repo"))
+async def repo_cmd(client, msg):
+    await msg.reply_text(
+        text=f"""𝙷𝚎𝚕𝚕𝚘,{msg.from_user.mention}\n𝙼𝚢 𝚛𝚎𝚙𝚘\n            ☟︎︎︎   """,
+        reply_markup=InlineKeyboardMarkup(repo_data)
+    )
+
+
 repo = [[
  InlineKeyboardButton("💻 repo", url="https://github.com/Sivatheking/pyrogram")
+]]
+
+repo_data = [[
+ InlineKeyboardButton("💻 repo", callback_data="repo_data")
 ]]      
 
 
