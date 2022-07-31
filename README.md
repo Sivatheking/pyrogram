@@ -1,5 +1,7 @@
 # pyrogram
 
+[![Format Python code](https://github.com/Sivatheking/pyrogram/actions/workflows/yapf.yml/badge.svg)](https://github.com/Sivatheking/pyrogram/actions/workflows/yapf.yml)
+
 
 <h1> Required </h1>
 <code> 𝙰𝚙𝚒 𝚑𝚊𝚜𝚑 </code><br>
