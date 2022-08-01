@@ -220,7 +220,21 @@ repo_data = [[
 
 
 
+def main():
 
+    if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
+        try:
+            dispatcher.bot.send_message(f"@pyrogram_support", f"[𝙸'𝚊𝚖 𝚛𝚎𝚊𝚍𝚢 𝚝𝚘 𝚋𝚊𝚝𝚝𝚕𝚎]({MIKU_DISPACHER_PIC})", parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                  [                  
+                       InlineKeyboardButton(
+                             text="[► Add me◄]",
+                             url="https://t.me/aigarrobot?startgroup=true")
+                     ] 
+                ]
+            ),
+        ) 
 
 
 
