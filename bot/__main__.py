@@ -195,7 +195,7 @@ async def callback(client, msg: CallbackQuery):
     elif msg.data == "repo":
         await msg.message.edit(
             text="our 𝚛𝚎𝚙𝚘 𝚞𝚗𝚍𝚎𝚛 𝚋𝚞𝚝𝚝𝚘𝚗",
-            reply_markup=InlineKeyboardMarkup(Source_code)
+            reply_markup=InlineKeyboardMarkup(Source_code),
         )
 
 @Siva.on_message(filters.command("repo"))
@@ -215,23 +215,6 @@ repo_data = [[
 ]]      
 
 
-
-
+print("Bot started")
 
 Siva.run()
-
-def main():
-
-    if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
-        try:
-            dispatcher.bot.send_message(f"@pyrogram_support", f"[𝙸'𝚊𝚖 𝚛𝚎𝚊𝚍𝚢 𝚝𝚘 𝚋𝚊𝚝𝚝𝚕𝚎]({MIKU_DISPACHER_PIC})", parse_mode=ParseMode.MARKDOWN,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                  [                  
-                       InlineKeyboardButton(
-                             text="[► Add me◄]",
-                             url="https://t.me/aigarrobot?startgroup=true")
-                     ] 
-                ]
-            ),
-        ) 
