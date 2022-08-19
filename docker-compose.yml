@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  worker: 
+    build: .
+    environment:
+      APP_ID: $API_ID
+      API_HASH: $API_HASH
+      TOKEN: $TOKEN
