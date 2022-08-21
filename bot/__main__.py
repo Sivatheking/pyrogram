@@ -162,7 +162,7 @@ async def start_keyboard(client, message):
 async def info_cmd(client, msg):
     info = f"""
 ➪ First Name - {msg.from_user.first_name}
-➪ Last Name - {msg.from_user.last_name}
+➪ Last Name - {msg.from_user.last_name} or "" None ""
 ➪ User name - @{msg.chat.username}
 ➪ Id - {msg.chat.id}
 ➪ Mention - {msg.from_user.mention}"""
@@ -193,7 +193,17 @@ async def callback(client, msg: CallbackQuery):
         )
 
     elif msg.data == "about":
-        await msg.message.edit(text= f""About"")
+        await msg.message.edit(
+            text= f"""
+                𝐇𝐞𝐥𝐥𝐨 [{message.from_user.mention}] 
+                \n❍ 𝐌𝐲 𝐎𝐰𝐧𝐞𝐫 :- [꧁༒︎༒︎༆༆𝐒𝐢𝐯𝐚𝐭𝐡𝐞𝐛𝐨𝐬𝐬༆༆༒︎༒︎꧂](t.me/Sivatheking_1)
+                \n❍ 𝐌𝐲 𝐬𝐮𝐩𝐩𝐨𝐫𝐭 :- [ᴘʏʀᴏɢʀᴀᴍ sᴜᴘᴘᴏʀᴛ](t.me/pyrogram_support)
+                \n❍ 𝐌𝐲 𝐋𝐨𝐠𝐬 :- [ᴍʏ ʟᴏɢs ᴄʜᴀɴɴᴇʟ](t.me/lovelybot_logs)
+                \n★ 𝙽𝚘𝚝𝚎 
+                \n\nᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ ɪs [𝔾𝕚𝕥𝕙𝕦𝕓](githu.com/Sivatheking) . ᴄᴏᴅᴇ ᴡʀɪᴛᴇʀ ɪs [sɪᴠᴀᴛʜᴇᴋɪɴɢ](t.me/Sivatheking_1) . 
+                \n\n★ 𝙸𝚖𝚙𝚘𝚛𝚝𝚊𝚗𝚝 𝙽𝚘𝚝𝚒𝚌𝚎
+                \n𝙼𝚢 𝙾𝚠𝚗𝚎𝚛 𝚗𝚘𝚝 𝚠𝚛𝚒𝚝𝚎 𝚌𝚘𝚖𝚙𝚕𝚎𝚝𝚎 𝚌𝚘𝚍𝚎 𝚏𝚘𝚛  𝚐𝚛𝚘𝚞𝚙 𝚖𝚊𝚗𝚊𝚐𝚎 𝚜𝚘𝚘𝚗 𝚐𝚛𝚘𝚞𝚙 𝚖𝚊𝚗𝚐𝚎 𝚋𝚘𝚝 (𝚘𝚛) 𝚆𝚒𝚝𝚑𝚘𝚞𝚝 𝙶𝚛𝚘𝚞𝚙 𝙼𝚊𝚗𝚐𝚎 𝚊𝚌𝚌𝚎𝚜𝚜 𝚖𝚢 𝚜𝚘𝚞𝚛𝚌𝚎"""
+        )
 
 @Siva.on_message(filters.command("repo"))
 async def repo_cmd(client, msg):
