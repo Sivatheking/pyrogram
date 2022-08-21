@@ -193,7 +193,7 @@ async def callback(client, msg: CallbackQuery):
         )
 
     elif msg.data == "about":
-        await msg.message.edit(text=About)
+        await msg.message.edit(text= f""About"")
 
 @Siva.on_message(filters.command("repo"))
 async def repo_cmd(client, msg):
