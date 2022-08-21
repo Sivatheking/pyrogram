@@ -4,7 +4,7 @@ PM_MENTION = """
 
 
 About = f"""
-    𝐇𝐞𝐥𝐥𝐨 {msg.from_user.mention} 
+    𝐇𝐞𝐥𝐥𝐨 {message.from_user.mention} 
     \n❍ 𝐌𝐲 𝐎𝐰𝐧𝐞𝐫 :- [꧁༒︎༒︎༆༆𝐒𝐢𝐯𝐚𝐭𝐡𝐞𝐛𝐨𝐬𝐬༆༆༒︎༒︎꧂](t.me/Sivatheking_1)
     \n❍ 𝐌𝐲 𝐬𝐮𝐩𝐩𝐨𝐫𝐭 :- [ᴘʏʀᴏɢʀᴀᴍ sᴜᴘᴘᴏʀᴛ](t.me/pyrogram_support)
     \n❍ 𝐌𝐲 𝐋𝐨𝐠𝐬 :- [ᴍʏ ʟᴏɢs ᴄʜᴀɴɴᴇʟ](t.me/lovelybot_logs)
