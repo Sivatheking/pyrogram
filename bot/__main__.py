@@ -41,6 +41,8 @@ RRR = Button = [[
 
 START_TEXT = [[
  InlineKeyboardButton("💫 About", callback_data="about")
+],[
+ InlineKeyboardButton("🖥️ repo" callback_data="repoo")
 ]]
 
 
@@ -162,8 +164,8 @@ async def start_keyboard(client, message):
 async def info_cmd(client, msg):
     info = f"""
 ➪ First Name - {msg.from_user.first_name}
-➪ Last Name - {msg.from_user.last_name} or "" None ""
-➪ User name - @{msg.chat.username}
+➪ Last Name - {msg.from_user.last_name} or "None"
+➪ User name - @{msg.chat.username} or "None"
 ➪ Id - {msg.chat.id}
 ➪ Mention - {msg.from_user.mention}"""
 
@@ -173,6 +175,7 @@ async def info_cmd(client, msg):
 async def id_cmd(client, msg):
     Id = f"""
 ☞︎︎︎ Your id : `{msg.from_user.id}`"""
+
 
     
     await msg.reply_text(text=Id)
@@ -189,7 +192,7 @@ async def video(client, msg):
 async def callback(client, msg: CallbackQuery):
     if msg.data == "🤖 Help 🤖":
         await msg.message.edit(
-            text="☞︎︎︎ /id :- ɢᴇᴛ ʏᴏᴜʀ ɪᴅ\n☞︎︎︎ /info :- ɢᴇᴛ ʏᴏᴜʀ ɪɴғᴏʀᴍᴀʀɪᴏɴ\n☞︎︎︎ /buttons :- 𝙾𝚙𝚎𝚗𝚒𝚗𝚐 𝙺𝚎𝚢𝚋𝚘𝚊𝚛𝚍\n☞︎︎︎ /repo :- ᴍʏ sᴏᴜʀᴇ ᴄᴏᴅᴇ\nDᴇᴘʟᴏʏ ʏᴏᴜʀ ᴏᴡɴ ᴍʏ ᴄʟᴏɴᴇ"
+            text="☞︎︎︎ /id :- ɢᴇᴛ ʏᴏᴜʀ ɪᴅ\n☞︎︎︎ /info :- ɢᴇᴛ ʏᴏᴜʀ ɪɴғᴏʀᴍᴀʀɪᴏɴ\n☞︎︎︎ /buttons :- 𝙾𝚙𝚎𝚗𝚒𝚗𝚐 𝙺𝚎𝚢𝚋𝚘𝚊𝚛𝚍\n☞︎︎︎ /repo :- ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴍʏ ʀᴇᴘᴏ"
         )
 
     elif msg.data == "about":
@@ -205,12 +208,11 @@ async def callback(client, msg: CallbackQuery):
                 \n𝙼𝚢 𝙾𝚠𝚗𝚎𝚛 𝚗𝚘𝚝 𝚠𝚛𝚒𝚝𝚎 𝚌𝚘𝚖𝚙𝚕𝚎𝚝𝚎 𝚌𝚘𝚍𝚎 𝚏𝚘𝚛  𝚐𝚛𝚘𝚞𝚙 𝚖𝚊𝚗𝚊𝚐𝚎 𝚜𝚘𝚘𝚗 𝚐𝚛𝚘𝚞𝚙 𝚖𝚊𝚗𝚐𝚎 𝚋𝚘𝚝 (𝚘𝚛) 𝚆𝚒𝚝𝚑𝚘𝚞𝚝 𝙶𝚛𝚘𝚞𝚙 𝙼𝚊𝚗𝚐𝚎 𝚊𝚌𝚌𝚎𝚜𝚜 𝚖𝚢 𝚜𝚘𝚞𝚛𝚌𝚎"""
         )
 
-@Siva.on_message(filters.command("repo"))
-async def repo_cmd(client, msg):
-    await msg.reply_text(
-        text=f"""𝙷𝚎𝚕𝚕𝚘,{msg.from_user.mention}\n𝙼𝚢 𝚛𝚎𝚙𝚘""",
-        reply_markup=InlineKeyboardMarkup(repo_data)
+    elif msg data == "repoo":
+        await msg.message.edit(
+            text=f""" ʜᴇʟʟᴏ {msg.from_user.mention}\n ᴍʏ ʀᴇᴘᴏ ɪs ᴘʀɪᴠᴀᴛᴇ"""
     )
+
 
 
 Source_code = [[
@@ -218,7 +220,7 @@ Source_code = [[
 ]]
 
 repo_data = [[
- InlineKeyboardButton("💻 repo", callback_data="repo_data")
+ InlineKeyboardButton("💻 repo", callback_data="repoᴏ")
 ]]      
 
 
