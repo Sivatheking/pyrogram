@@ -42,7 +42,7 @@ RRR = Button = [[
 START_TEXT = [[
  InlineKeyboardButton("💫 About", callback_data="about")
 ],[
- InlineKeyboardButton("🖥️ repo" callback_data="repoo")
+ InlineKeyboardButton("🖥️ repo", callback_data="repoo")
 ]]
 
 
