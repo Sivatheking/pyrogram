@@ -164,8 +164,8 @@ async def start_keyboard(client, message):
 async def info_cmd(client, msg):
     info = f"""
 ➪ First Name - {msg.from_user.first_name}
-➪ Last Name - {msg.from_user.last_name} or "None"
-➪ User name - @{msg.chat.username} or "None"
+➪ Last Name - {msg.from_user.last_name} or "NONE"
+➪ User name - @{msg.chat.username} or "NONE"
 ➪ Id - {msg.chat.id}
 ➪ Mention - {msg.from_user.mention}"""
 
