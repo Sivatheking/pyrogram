@@ -196,7 +196,8 @@ async def callback(client, msg: CallbackQuery):
         )
 
     elif msg.data == "about":
-        await msg.message.edit(
+        reply1 = await msg.message.edit("`processing.....`"
+        await reply1.message.edit(
             text= f"""
                 𝐇𝐞𝐥𝐥𝐨 {msg.from_user.mention}
                 \n❍ 𝐌𝐲 𝐎𝐰𝐧𝐞𝐫 :- [꧁༒︎༒︎༆༆𝐒𝐢𝐯𝐚𝐭𝐡𝐞𝐛𝐨𝐬𝐬༆༆༒︎༒︎꧂](t.me/Sivatheking_1)
@@ -212,6 +213,8 @@ async def callback(client, msg: CallbackQuery):
         await msg.message.edit(
             text=f""" ʜᴇʟʟᴏ {msg.from_user.mention}\n ᴍʏ ʀᴇᴘᴏ ɪs ᴘʀɪᴠᴀᴛᴇ"""
     )
+    elif msg.data == "fun":
+        
 
 
 
