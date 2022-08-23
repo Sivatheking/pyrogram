@@ -191,12 +191,20 @@ async def video(client, msg):
 @Siva.on_callback_query()
 async def callback(client, msg: CallbackQuery):
     if msg.data == "🤖 Help 🤖":
+
+
+        reply1 = await msg.message.edit("`processing.....`")
+
         await msg.message.edit(
             text="☞︎︎︎ /id :- ɢᴇᴛ ʏᴏᴜʀ ɪᴅ\n☞︎︎︎ /info :- ɢᴇᴛ ʏᴏᴜʀ ɪɴғᴏʀᴍᴀʀɪᴏɴ\n☞︎︎︎ /buttons :- 𝙾𝚙𝚎𝚗𝚒𝚗𝚐 𝙺𝚎𝚢𝚋𝚘𝚊𝚛𝚍\n☞︎︎︎ /repo :- ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴍʏ ʀᴇᴘᴏ"
         )
 
     elif msg.data == "about":
+
+
         reply1 = await msg.message.edit("`processing.....`")
+
+
         await reply1.message.edit(
             text= f"""
                 𝐇𝐞𝐥𝐥𝐨 {msg.from_user.mention}
