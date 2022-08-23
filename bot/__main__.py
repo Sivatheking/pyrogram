@@ -43,7 +43,8 @@ RRR = Button = [[
 START_TEXT = [[
  InlineKeyboardButton("💫 About", callback_data="about")
 ],[
- InlineKeyboardButton("🖥️ repo", callback_data="repoo")
+ InlineKeyboardButton("🖥️ repo", callback_data="repoo"),
+ InlineKeyboardButton("fun", callback_data="fun"),
 ]]
 
 
@@ -230,10 +231,9 @@ async def callback(client, msg: CallbackQuery):
   
 @Siva.on_message(filters.command("fun"))     
 async def fun_cmd(client, msg):
-        reply1 = await msg.edit("☾︎")
-        reply2 = await reply1.edit("☀️")
-        await reply2.edit("☾︎      🌍    Round  ☀️  ")
-  
+    await msg.reply_text(
+        callback_data="fun"
+    )
 
 
 Source_code = [[
