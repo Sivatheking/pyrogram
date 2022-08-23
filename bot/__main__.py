@@ -205,7 +205,7 @@ async def callback(client, msg: CallbackQuery):
         reply1 = await msg.message.edit("`processing.....`")
 
 
-        await reply1.message.edit(
+        await reply1.edit(
             text= f"""
                 𝐇𝐞𝐥𝐥𝐨 {msg.from_user.mention}
                 \n❍ 𝐌𝐲 𝐎𝐰𝐧𝐞𝐫 :- [꧁༒︎༒︎༆༆𝐒𝐢𝐯𝐚𝐭𝐡𝐞𝐛𝐨𝐬𝐬༆༆༒︎༒︎꧂](t.me/Sivatheking_1)
