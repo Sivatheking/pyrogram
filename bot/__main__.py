@@ -47,7 +47,9 @@ START_TEXT = [[
  InlineKeyboardButton("fun", callback_data="fun"),
 ]]
 
-
+Hia = [[
+ InlineKeyboardButton("fun", callback_data="fun"),
+]]
 
 
 @Siva.on_message(filters.command("start"))
@@ -232,7 +234,7 @@ async def callback(client, msg: CallbackQuery):
 @Siva.on_message(filters.command("fun"))     
 async def fun_cmd(client, msg):
     await msg.reply_text(
-        callback_data="fun"
+        reply_markup=InlineKeyboardMarkup(Hia)
     )
 
 
