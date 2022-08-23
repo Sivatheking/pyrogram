@@ -221,7 +221,7 @@ async def callback(client, msg: CallbackQuery):
         await msg.message.edit(
             text=f""" ʜᴇʟʟᴏ {msg.from_user.mention}\n ᴍʏ ʀᴇᴘᴏ ɪs ᴘʀɪᴠᴀᴛᴇ"""
     )
-    elif msg.data == "fun":
+ 
         
 
 
