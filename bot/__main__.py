@@ -204,7 +204,7 @@ async def callback(client, msg: CallbackQuery):
 
 
         reply1 = await msg.message.edit("`processing.....`")
-        await asyncio.sleep(1)
+        await asyncio.sleep(5)
 
         await reply1.edit(
             text= f"""
