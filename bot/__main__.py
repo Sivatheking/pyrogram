@@ -4,6 +4,7 @@ from pyrogram.types import CallbackQuery, ReplyKeyboardMarkup
 from pyrogram.errors import UserNotParticipant 
 import os
 import script 
+import asyncio
 
 
 Siva = Client(
@@ -203,7 +204,7 @@ async def callback(client, msg: CallbackQuery):
 
 
         reply1 = await msg.message.edit("`processing.....`")
-
+        await asyncio.sleep(1)
 
         await reply1.edit(
             text= f"""
