@@ -222,6 +222,10 @@ async def callback(client, msg: CallbackQuery):
         await msg.message.edit(
             text=f""" ʜᴇʟʟᴏ {msg.from_user.mention}\n ᴍʏ ʀᴇᴘᴏ ɪs ᴘʀɪᴠᴀᴛᴇ"""
     )
+    elif msg.data == "fun":
+        reply1 = await msg.edit("☾︎")
+        reply2 = await reply1.edit("☀️")
+        await reply2.edit("☾︎      🌍    Round  ☀️  ")
  
         
 
