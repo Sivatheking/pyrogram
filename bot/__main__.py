@@ -231,8 +231,10 @@ async def callback(client, msg: CallbackQuery):
 @Siva.on_message(filters.command("fun"))     
 async def fun_cmd(client, msg):
     await msg.reply_text(
-        InlineKeyboardMarkup(Source_code)
-    )
+        reply1 = await msg.edit("☾︎")
+        reply2 = await reply1.edit("☀️")
+        await reply2.edit("☾︎      🌍    Round  ☀️  ")
+    
 
 
 Source_code = [[
