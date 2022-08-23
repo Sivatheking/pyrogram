@@ -196,7 +196,7 @@ async def callback(client, msg: CallbackQuery):
         )
 
     elif msg.data == "about":
-        reply1 = await msg.message.edit("`processing.....`"
+        reply1 = await msg.message.edit("`processing.....`")
         await reply1.message.edit(
             text= f"""
                 𝐇𝐞𝐥𝐥𝐨 {msg.from_user.mention}
