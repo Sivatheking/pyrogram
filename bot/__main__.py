@@ -227,8 +227,10 @@ async def callback(client, msg: CallbackQuery):
         reply2 = await reply1.edit("☀️")
         await reply2.edit("☾︎      🌍    Round  ☀️  ")
  
-        
-
+  
+@siva.on_message(filters.command("fun"))     
+async def fun_cmd(client, msg)
+    await msg.reply_text(text=fun)
 
 
 Source_code = [[
