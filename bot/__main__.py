@@ -234,7 +234,7 @@ async def fun_cmd(client, msg):
         reply1 = await msg.edit("☾︎")
         reply2 = await reply1.edit("☀️")
         await reply2.edit("☾︎      🌍    Round  ☀️  ")
-    
+    )    
 
 
 Source_code = [[
