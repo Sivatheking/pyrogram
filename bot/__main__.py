@@ -229,7 +229,7 @@ async def callback(client, msg: CallbackQuery):
  
   
 @Siva.on_message(filters.command("fun"))     
-async def fun_cmd(client, msg)
+async def fun_cmd(client, msg):
     await msg.reply_text(text=fun)
 
 
