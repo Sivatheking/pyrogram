@@ -230,11 +230,13 @@ async def callback(client, msg: CallbackQuery):
   
 @Siva.on_message(filters.command("fun"))     
 async def fun_cmd(client, msg):
-    await msg.reply_text(text=fun)
+    await msg.reply_text(
+        InlineKeyboardMarkup(Source_code)
+    )
 
 
 Source_code = [[
- InlineKeyboardButton("💻 repo", url="https://github.com/Sivatheking/pyrogram")
+ InlineKeyboardButton("fun", callback_data="fun")
 ]]
 
 repo_data = [[
