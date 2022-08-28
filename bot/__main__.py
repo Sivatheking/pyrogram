@@ -228,8 +228,9 @@ async def callback(client, msg: CallbackQuery):
     )
     elif msg.data == "fun":
         reply1 = await msg.message.edit("☾︎")
+        await asyncio.sleep(5)
         reply2 = await reply1.edit("☀️")
-        await asyncio.sleep(2)
+        await asyncio.sleep(5)
         await reply2.edit("☾︎      🌍    Round  ☀️  ")
         
   
