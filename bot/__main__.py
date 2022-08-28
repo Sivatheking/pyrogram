@@ -229,8 +229,9 @@ async def callback(client, msg: CallbackQuery):
     elif msg.data == "fun":
         reply1 = await msg.message.edit("☾︎")
         reply2 = await reply1.edit("☀️")
-        await reply2.edit("☾︎      🌍    Round  ☀️  ")
         await asyncio.sleep(2)
+        await reply2.edit("☾︎      🌍    Round  ☀️  ")
+        
   
 @Siva.on_message(filters.command("fun"))     
 async def fun_cmd(client, msg):
