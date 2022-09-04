@@ -169,8 +169,8 @@ async def start_keyboard(client, message):
 async def info_cmd(client, msg):
     info = f"""
 ➪ First Name - {msg.from_user.first_name}
-➪ Last Name - {msg.from_user.last_name} or "NONE"
-➪ User name - @{msg.chat.username} or "NONE"
+➪ Last Name - {msg.from_user.last_name} 
+➪ User name - @{msg.chat.username} 
 ➪ Id - {msg.chat.id}
 ➪ Mention - {msg.from_user.mention}"""
 
@@ -183,7 +183,7 @@ async def id_cmd(client, msg):
 
 
     
-    await msg.reply_text(text=Id)
+    await msg.reply_forward(text=Id)
 
 @Siva.on_message(filters.command("video"))
 async def video(client, msg):
