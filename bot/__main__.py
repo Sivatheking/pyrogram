@@ -231,14 +231,8 @@ async def callback(client, msg: CallbackQuery):
         await asyncio.sleep(5)
         reply2 = await reply1.edit("☾︎       🌍")
         await asyncio.sleep(5)
-        await reply2.edit("☾︎  🌍 ☀️  ")
-        
-  
-@Siva.on_message(filters.command("fun"))     
-async def fun_cmd(client, msg):
-    await msg.reply_text(
-        reply_markup=InlineKeyboardMarkup(Hia)
-    )
+        await reply2.edit("☾︎  🌍 ☀️  ")     
+
 
 
 Source_code = [[
@@ -249,6 +243,11 @@ repo_data = [[
  InlineKeyboardButton("💻 repo", callback_data="repoᴏ")
 ]]      
 
+@Siva.on_message(filters.command | filters.private("fun"))
+async def fun_cmd(client, msg):
+    reply1 = await msg.reply_text(text="hi")
+    await asyncio.sleep(3) 
+    await reply1.reply_text(text="text")
 
 print("Bot started")
 
