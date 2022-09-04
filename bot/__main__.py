@@ -16,9 +16,9 @@ Siva = Client(
 
 
 
-Forse_channel = "Pyrogram_updates"
+Forse_channel = "Pyrogramupdates"
 
-Forse_group = "pyrogram_support"
+Forse_group = "pyrogramsupport"
 
 
 Channel = [[
