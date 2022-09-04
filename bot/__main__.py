@@ -181,11 +181,9 @@ async def info_cmd(client, msg):
 async def id_fwd(client, msg):
     Id = f"""
 ☞︎︎︎ Your id : `{msg.chat.id}`"""
+
+    await msg.reply_text(text=Id)
 print("successfully installed")
-
-
-    
-    await msg.reply_text.forward(text=Id)
 
 @Siva.on_message(filters.command("video"))
 async def video(client, msg):
