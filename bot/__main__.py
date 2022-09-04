@@ -243,7 +243,7 @@ repo_data = [[
  InlineKeyboardButton("💻 repo", callback_data="repoᴏ")
 ]]      
 
-@Siva.on_message(filters.command | filters.private("fun"))
+@Siva.on_message(filters.command("fun"))
 async def fun_cmd(client, msg):
     reply1 = await msg.reply_text(text="hi")
     await asyncio.sleep(3) 
