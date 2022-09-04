@@ -1,3 +1,4 @@
+front of
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pyrogram.types import CallbackQuery, ReplyKeyboardMarkup
@@ -177,9 +178,9 @@ async def info_cmd(client, msg):
     await msg.reply_text(text=info)
 
 @Siva.on_message(filters.command("id"))
-async def id_cmd(client, msg):
+async def id_fwd(client, msg):
     Id = f"""
-☞︎︎︎ Your id : `{msg.from_user.id}`"""
+☞︎︎︎ Your id : `{msg.chat.id}`"""
 
 
     
