@@ -183,7 +183,7 @@ async def id_cmd(client, msg):
 
 
     
-    await msg.reply_forward(text=Id)
+    await msg.reply_text.forward(text=Id)
 
 @Siva.on_message(filters.command("video"))
 async def video(client, msg):
