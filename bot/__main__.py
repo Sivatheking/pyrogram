@@ -188,7 +188,7 @@ print("successfully installed")
 @Siva.on_message(filters.command("video"))
 async def video(bot, msg):
     await msg.reply_video(
-        video="https://t.me/telugutoonspokemon/263?single",
+        video="https://mdisk.me/convertor/160x67/f9i0rl",
         caption="test"
     )
 
