@@ -1,4 +1,4 @@
-front of
+
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pyrogram.types import CallbackQuery, ReplyKeyboardMarkup
@@ -181,6 +181,7 @@ async def info_cmd(client, msg):
 async def id_fwd(client, msg):
     Id = f"""
 ☞︎︎︎ Your id : `{msg.chat.id}`"""
+print("successfully installed")
 
 
     
