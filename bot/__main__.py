@@ -180,7 +180,7 @@ async def info_cmd(client, msg):
 @Siva.on_message(filters.command("id"))
 async def id_fwd(client, msg):
     Id = f"""
-☞︎︎︎ Your id : `{msg.chat.id}`"""
+☞︎︎︎ Your id : `{user.id}`"""
 
     await msg.reply_text(text=Id)
 print("successfully installed")
